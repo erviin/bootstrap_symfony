@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container-xl">
+        <h1 class="block-title">We make creative media <br/> that <span class="text-site-blue">adds value</span></h1>
+        <div class="row">
+            {% for item in data %}
+                <div class="col-sm-12 col-md-6 col-lg-4 p-4">
+                    <div class="bg-white rounded row d-flex h-100">
+                        <div class="col-auto d-none d-md-block  col-5 bg-img"
+                             style="background-image: url('{{ item.img }}');">
+                        </div>
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <h5>{{ item.title }}</h5>
+                            {% if item.list is not empty %}
+                                <ul>
+                                    <li>A second item</li>
+                                    <li>A third item</li>
+                                    <li>A fourth item</li>
+                                    <li>And a fifth one</li>
+                                </ul>
+                            {% endif %}
+                            <p>{{ item.desc|nl2br }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="d-flex justify-content-center py-4 w-100">
+            <button class="btn px-4 bg-dark-blue text-white button-letter-space"> GET STARTED</button>
+        </div>
+    </div>
+
+{% endblock %}

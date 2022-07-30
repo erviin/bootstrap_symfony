@@ -1,0 +1,54 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    min-height: 75rem;
+    padding-top: 4.5rem;
+    background-color: #F5F5F8;
+}
+
+h1,h2,h3, button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+h4,h5,h6 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+
+.block-title {
+    font-style: normal;
+    color: #1B264F;
+    letter-spacing: -0.01em;
+    align-items: center;
+    text-align: center;
+}
+
+.text-site-blue {
+    color: #506BCA;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color: #D2AD81;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.bg-dark-blue, .bg-dark-blue:hover {
+    background-color: #1B264F;
+}
+
+.button-letter-space {
+    letter-spacing: 0.2em;
+}
+
+.bg-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
